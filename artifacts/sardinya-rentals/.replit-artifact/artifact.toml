@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Sardinya — Guida al noleggio"
+description = "Un sito mobile-first per i clienti di Sardinya: selezione interattiva degli uffici in Sardegna, istruzioni per ritiro e riconsegna dell'auto e assistenza durante il noleggio."
+version = "1.0.0"
+id = "artifacts/sardinya-rentals"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 25359
+
+[services.development]
+run = "pnpm --filter @workspace/sardinya-rentals run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/sardinya-rentals", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/sardinya-rentals/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "25359"
+BASE_PATH = "/"
