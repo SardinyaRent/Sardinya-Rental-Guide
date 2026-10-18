@@ -1,0 +1,1 @@
+- [Sardinya guide scope](sardinya-guide-scope.md) — informational only; Sassari and the central contact email have fixed priority.
