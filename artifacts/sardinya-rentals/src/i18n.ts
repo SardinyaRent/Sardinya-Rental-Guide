@@ -38,7 +38,6 @@ const it = {
     listTitle: 'Scegli dall’elenco',
   },
   office: {
-    allOffices: 'Tutte le sedi',
     kicker: 'La tua sede',
     intro: 'Scegli l’argomento che ti serve. Le indicazioni restano riferite a questa sede.',
     selected: 'Sede selezionata',
@@ -89,8 +88,6 @@ const it = {
       'Fotografa il livello del carburante e confrontalo con quello registrato nei documenti.',
       'Conserva foto e comunicazioni fino alla chiusura del noleggio.',
     ],
-    noteTitle: 'Non partire con differenze non segnalate',
-    noteText: 'Controlla che le immagini siano nitide e leggibili. Se trovi un danno o il livello del carburante non corrisponde, avvisa subito la sede.',
   },
   during: {
     safetyTitle: 'Prima la sicurezza',
@@ -197,7 +194,6 @@ const en: Dictionary = {
     listTitle: 'Choose from the list',
   },
   office: {
-    allOffices: 'All offices',
     kicker: 'Your office',
     intro: 'Choose the topic you need. The instructions will stay linked to this office.',
     selected: 'Selected office',
@@ -248,8 +244,6 @@ const en: Dictionary = {
       'Photograph the fuel gauge and compare it with the rental documents.',
       'Keep the photos and messages until the rental is closed.',
     ],
-    noteTitle: 'Report differences before leaving',
-    noteText: 'Make sure photos are clear and readable. If you spot damage or the fuel level does not match, tell the office straight away.',
   },
   during: {
     safetyTitle: 'Safety first',
@@ -354,7 +348,6 @@ const es: Dictionary = {
     listTitle: 'Elige en la lista',
   },
   office: {
-    allOffices: 'Todas las oficinas',
     kicker: 'Tu oficina',
     intro: 'Elige el tema que necesitas. Las indicaciones seguirán vinculadas a esta oficina.',
     selected: 'Oficina seleccionada',
@@ -405,8 +398,6 @@ const es: Dictionary = {
       'Fotografía el indicador de combustible y compáralo con los documentos.',
       'Guarda las fotos y los mensajes hasta que finalice el alquiler.',
     ],
-    noteTitle: 'Comunica las diferencias antes de salir',
-    noteText: 'Comprueba que las fotos sean nítidas. Si ves daños o el nivel de combustible no coincide, avisa a la oficina inmediatamente.',
   },
   during: {
     safetyTitle: 'La seguridad es lo primero',
@@ -511,7 +502,6 @@ const fr: Dictionary = {
     listTitle: 'Choisir dans la liste',
   },
   office: {
-    allOffices: 'Toutes les agences',
     kicker: 'Votre agence',
     intro: 'Choisissez le sujet qui vous concerne. Les indications resteront liées à cette agence.',
     selected: 'Agence sélectionnée',
@@ -562,8 +552,6 @@ const fr: Dictionary = {
       'Photographiez la jauge de carburant et comparez-la aux documents de location.',
       'Conservez les photos et les échanges jusqu’à la clôture de la location.',
     ],
-    noteTitle: 'Signalez toute différence avant de partir',
-    noteText: 'Vérifiez que les photos sont nettes. Si vous constatez un dommage ou un niveau de carburant différent, prévenez immédiatement l’agence.',
   },
   during: {
     safetyTitle: 'La sécurité d’abord',
@@ -668,7 +656,6 @@ const de: Dictionary = {
     listTitle: 'Aus der Liste auswählen',
   },
   office: {
-    allOffices: 'Alle Stationen',
     kicker: 'Deine Station',
     intro: 'Wähle das passende Thema. Die Hinweise bleiben auf diese Station bezogen.',
     selected: 'Ausgewählte Station',
@@ -719,8 +706,6 @@ const de: Dictionary = {
       'Fotografiere die Tankanzeige und vergleiche sie mit den Mietunterlagen.',
       'Bewahre Fotos und Nachrichten bis zum Abschluss der Anmietung auf.',
     ],
-    noteTitle: 'Abweichungen vor der Abfahrt melden',
-    noteText: 'Achte auf scharfe, gut lesbare Fotos. Melde Schäden oder einen abweichenden Tankstand sofort der Station.',
   },
   during: {
     safetyTitle: 'Sicherheit zuerst',
@@ -825,7 +810,6 @@ const nl: Dictionary = {
     listTitle: 'Kies uit de lijst',
   },
   office: {
-    allOffices: 'Alle kantoren',
     kicker: 'Jouw kantoor',
     intro: 'Kies het onderwerp dat je nodig hebt. De aanwijzingen blijven gekoppeld aan dit kantoor.',
     selected: 'Gekozen kantoor',
@@ -876,8 +860,6 @@ const nl: Dictionary = {
       'Fotografeer de brandstofmeter en vergelijk die met de huurdocumenten.',
       'Bewaar foto’s en berichten totdat de huur is afgesloten.',
     ],
-    noteTitle: 'Meld verschillen voordat je vertrekt',
-    noteText: 'Controleer of de foto’s scherp en duidelijk zijn. Meld schade of een afwijkend brandstofniveau direct bij het kantoor.',
   },
   during: {
     safetyTitle: 'Veiligheid eerst',

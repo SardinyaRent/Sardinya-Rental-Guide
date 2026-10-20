@@ -4,7 +4,7 @@ import { ErrorBoundary } from '@/components/error-boundary';
 import { Toaster } from '@/components/ui/toaster';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import {
-  ArrowLeft, ArrowRight, Camera, CarFront, Check, CircleAlert, ExternalLink,
+  ArrowLeft, ArrowRight, CarFront, Check, CircleAlert, ExternalLink,
   Fuel, Headset, Home as HomeIcon, KeyRound, Mail, MapPin, Phone, ShieldCheck,
   TriangleAlert, Waves, Wrench,
 } from 'lucide-react';
@@ -245,10 +245,6 @@ function StartGuide({ office }: { office: Office }) {
       <ol className="step-list">
         {copy.start.steps.map((step, index) => <li key={step} data-testid={`text-pickup-step-${index + 1}`}>{step}</li>)}
       </ol>
-      <div className="callout">
-        <Camera size={20} />
-        <div><strong>{copy.start.noteTitle}</strong><p>{copy.start.noteText}</p></div>
-      </div>
     </div>
   </>;
 }
@@ -367,16 +363,12 @@ function GuidePage({ section }: { section: GuideKey }) {
   const params = useParams<{ slug: string }>();
   const office = bySlug(params.slug);
   const copy = useCopy();
-  const { language } = useLocale();
   if (!office) return <NotFound />;
   return <Shell><div className="page-wrap guide-content">
     <OfficeHeading office={office} title={copy.sections[section].title} />
     {section === 'departure' && <StartGuide office={office} />}
     {section === 'during' && <DuringGuide />}
     {section === 'return' && <ReturnGuide office={office} />}
-    <Link href={`/sede/${office.slug}`} className="back-link guide-back" data-testid="link-back-guide">
-      <ArrowLeft size={16} />{copy.office.allOffices}: {officeName(office, language)}
-    </Link>
   </div></Shell>;
 }
 

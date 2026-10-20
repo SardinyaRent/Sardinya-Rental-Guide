@@ -80,7 +80,6 @@
 .contact-general{margin-top:12px}
 .emergency-action{border-color:#e7b0ae;background:#fff6f5}
 .emergency-action strong,.emergency-action svg{color:#a11b17}
-.guide-back{margin-top:18px}
 @media(max-width:760px){
   .topbar{padding:14px 16px 11px}
   .language-picker{gap:6px}
