@@ -34,7 +34,7 @@ const it = {
     kicker: 'Guida clienti Sardinya',
     title: 'Seleziona una sede per iniziare',
     intro: 'Tocca un punto sulla mappa o scegli una sede dall’elenco. Troverai i passaggi per ritiro, viaggio e riconsegna.',
-    guideOnly: 'Questa guida non gestisce prenotazioni. Segui i passaggi indicati per il tuo noleggio.',
+    guideOnly: 'Seleziona un ufficio per iniziare.',
     listTitle: 'Scegli dall’elenco',
   },
   office: {
@@ -194,7 +194,7 @@ const en: Dictionary = {
     kicker: 'Sardinya customer guide',
     title: 'Select an office to start',
     intro: 'Tap a point on the map or choose an office from the list. Find the steps for pickup, your trip and return.',
-    guideOnly: 'This guide does not handle bookings. Follow the steps for your rental.',
+    guideOnly: 'Select an office to get started.',
     listTitle: 'Choose from the list',
   },
   office: {
@@ -352,7 +352,7 @@ const es: Dictionary = {
     kicker: 'Guía para clientes de Sardinya',
     title: 'Selecciona una oficina para empezar',
     intro: 'Toca un punto del mapa o elige una oficina de la lista. Aquí encontrarás los pasos para la recogida, el viaje y la devolución.',
-    guideOnly: 'Esta guía no gestiona reservas. Sigue los pasos indicados para tu alquiler.',
+    guideOnly: 'Selecciona una oficina para empezar.',
     listTitle: 'Elige en la lista',
   },
   office: {
@@ -510,7 +510,7 @@ const fr: Dictionary = {
     kicker: 'Guide client Sardinya',
     title: 'Choisissez une agence pour commencer',
     intro: 'Touchez un point sur la carte ou choisissez une agence dans la liste. Retrouvez les étapes pour le retrait, le trajet et la restitution.',
-    guideOnly: 'Ce guide ne permet pas de réserver. Suivez les étapes indiquées pour votre location.',
+    guideOnly: 'Sélectionnez une agence pour commencer.',
     listTitle: 'Choisir dans la liste',
   },
   office: {
@@ -668,7 +668,7 @@ const de: Dictionary = {
     kicker: 'Sardinya-Kundenhilfe',
     title: 'Wähle eine Station, um zu beginnen',
     intro: 'Tippe auf einen Kartenpunkt oder wähle eine Station aus der Liste. Hier findest du die Schritte für Abholung, Fahrt und Rückgabe.',
-    guideOnly: 'Diese Anleitung nimmt keine Buchungen entgegen. Folge den Schritten für deine Anmietung.',
+    guideOnly: 'Wähle ein Büro, um zu beginnen.',
     listTitle: 'Aus der Liste auswählen',
   },
   office: {
@@ -826,7 +826,7 @@ const nl: Dictionary = {
     kicker: 'Sardinya-klantengids',
     title: 'Kies een kantoor om te beginnen',
     intro: 'Tik op een punt op de kaart of kies een kantoor uit de lijst. Bekijk de stappen voor ophalen, onderweg en terugbrengen.',
-    guideOnly: 'Deze gids verwerkt geen reserveringen. Volg de stappen voor je huurauto.',
+    guideOnly: 'Selecteer een kantoor om te beginnen.',
     listTitle: 'Kies uit de lijst',
   },
   office: {

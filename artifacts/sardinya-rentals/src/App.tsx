@@ -13,6 +13,7 @@ import {
 } from 'wouter';
 import cleanExample from './assets/clean-example.jpg';
 import dirtyExample from './assets/dirty-example.jpg';
+import sardinyaLogo from './assets/sardinya-logo.png';
 import {
   languageOptions, officeNames, translations,
   type Language, type OfficeSlug,
@@ -82,8 +83,11 @@ function Header() {
   const copy = useCopy();
   return <header className="topbar">
     <Link href="/" className="brand" data-testid="link-brand-home">
-      <span className="brand-mark"><Waves size={18} /></span>
-      <span>Sardinya</span>
+      <img
+        className="brand-logo"
+        src={sardinyaLogo}
+        alt="Sardinya — Rent a car, Autonoleggio"
+      />
     </Link>
     <label className="language-picker">
       <span>{copy.languageLabel}</span>

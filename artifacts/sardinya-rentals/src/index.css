@@ -96,3 +96,6 @@
   .language-picker{gap:4px;font-size:11px}
   .language-picker select{max-width:116px;font-size:11px}
 }
+.brand-logo{display:block;width:148px;height:74px;max-width:100%;object-fit:contain;border-radius:6px;background:#fff}
+@media(max-width:760px){.brand-logo{width:128px;height:64px}}
+@media(max-width:360px){.brand-logo{width:110px;height:55px}}
