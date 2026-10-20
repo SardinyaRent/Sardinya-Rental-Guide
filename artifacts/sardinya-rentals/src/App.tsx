@@ -14,6 +14,10 @@ import {
 import cleanExample from './assets/clean-example.jpg';
 import dirtyExample from './assets/dirty-example.jpg';
 import sardinyaLogo from './assets/sardinya-logo.png';
+import oilWarningIcon from './assets/oil-warning.png';
+import headlightWarningIcon from './assets/headlight-warning.png';
+import genericWarningIcon from './assets/generic-warning.png';
+import tirePressureWarningIcon from './assets/tire-pressure-warning.png';
 import {
   languageOptions, officeNames, translations,
   type Language, type OfficeSlug,
@@ -252,6 +256,7 @@ function StartGuide({ office }: { office: Office }) {
 function DuringGuide() {
   const copy = useCopy();
   const warningIcons = [CircleAlert, Wrench, TriangleAlert, Fuel];
+  const warningImages = [oilWarningIcon, headlightWarningIcon, tirePressureWarningIcon, genericWarningIcon];
   return <>
     <div className="callout danger-callout">
       <TriangleAlert size={21} />
@@ -262,8 +267,15 @@ function DuringGuide() {
       <div className="subsection-grid">
         {copy.during.warnings.map((warning, index) => {
           const Icon = warningIcons[index];
+          const image = warningImages[index];
           return <div className="subsection" key={warning.title}>
-            <h3><Icon size={16} />{warning.title}</h3><p>{warning.text}</p>
+            <h3>
+              {image
+                ? <img className="warning-icon-image" src={image} alt="" aria-hidden="true" />
+                : <Icon size={16} aria-hidden="true" />}
+              {warning.title}
+            </h3>
+            <p>{warning.text}</p>
           </div>;
         })}
       </div>

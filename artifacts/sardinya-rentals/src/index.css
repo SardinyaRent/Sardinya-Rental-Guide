@@ -98,3 +98,4 @@
 .brand-logo{display:block;width:148px;height:74px;max-width:100%;object-fit:contain;border-radius:6px;background:#fff}
 @media(max-width:760px){.brand-logo{width:128px;height:64px}}
 @media(max-width:360px){.brand-logo{width:110px;height:55px}}
+.warning-icon-image{display:block;width:20px;height:20px;object-fit:contain;margin-bottom:5px}
