@@ -128,33 +128,6 @@ function Shell({ children }: { children: ReactNode }) {
   return <div className="app-shell"><Header /><main>{children}</main><BottomNav /></div>;
 }
 
-function OfficeMap() {
-  const copy = useCopy();
-  const { language } = useLocale();
-  return <div className="map-card" aria-label={copy.map.aria}>
-    <div className="map-top"><span>{copy.map.title}</span><span>{copy.map.count}</span></div>
-    <div className="map-art">
-      <div className="island" aria-hidden="true" />
-      <span className="sea-label" style={{ left: '4%', top: '75%' }}>{copy.map.westSea}</span>
-      <span className="sea-label" style={{ right: '5%', top: '36%' }}>{copy.map.eastSea}</span>
-      {offices.map((office) => {
-        const name = officeName(office, language);
-        return <Link
-          key={office.slug}
-          href={`/sede/${office.slug}`}
-          className={`map-pin ${office.pinLeft ? 'pin-left' : ''}`}
-          style={office.pin}
-          aria-label={format(copy.map.choose, { office: name })}
-          data-testid={`link-map-pin-${office.slug}`}
-        >
-          <span className="pin-dot"><MapPin size={11} /></span>{name}
-        </Link>;
-      })}
-      <span className="map-help">{copy.map.tap}</span>
-    </div>
-  </div>;
-}
-
 function HeadOfficeBadge() {
   const copy = useCopy();
   return <small className="office-role">{copy.office.headOffice}</small>;
@@ -164,18 +137,10 @@ function Home() {
   const copy = useCopy();
   const { language } = useLocale();
   return <Shell><div className="page-wrap home-page">
-    <section className="home-hero">
-      <div className="hero-copy">
-        <div className="eyebrow">{copy.home.kicker}</div>
-        <h1 className="page-title">{copy.home.title}</h1>
-        <p className="lead">{copy.home.intro}</p>
-      </div>
-      <OfficeMap />
-    </section>
     <p className="guide-only-note" data-testid="text-guide-only">{copy.home.guideOnly}</p>
     <section aria-labelledby="locations-title">
       <div className="section-head">
-        <h2 id="locations-title" className="page-title section-title">{copy.home.listTitle}</h2>
+        <h1 id="locations-title" className="page-title section-title">{copy.home.listTitle}</h1>
       </div>
       <div className="location-list">
         {offices.map((office, index) =>
